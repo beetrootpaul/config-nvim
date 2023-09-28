@@ -32,3 +32,6 @@ nnoremap <leader><CR> :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR>
 
+" navigate over results of a quicklist, e.g. `:grep <term> **/*.ts`
+nnoremap <C-j> :cnext<CR>
+nnoremap <C-k> :cprevious<CR>
