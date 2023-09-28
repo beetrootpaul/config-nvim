@@ -47,3 +47,7 @@ lua require('mini.animate').setup()
 " copy to system clipboard
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
+
+" move selected lines up/down
+vnoremap J :move '>+1<CR>gv=gv
+vnoremap K :move '<-2<CR>gv=gv
