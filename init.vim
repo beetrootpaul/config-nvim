@@ -43,3 +43,7 @@ nnoremap <C-k> :cprevious<CR>
 
 " https://github.com/echasnovski/mini.animate
 lua require('mini.animate').setup()
+
+" copy to system clipboard
+vnoremap <leader>y "+y
+nnoremap <leader>y "+y
