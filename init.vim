@@ -5,6 +5,8 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set incsearch
+set nohlsearch
 
 " Plug – Vim plugin manager
 " https://github.com/junegunn/vim-plug
@@ -16,6 +18,9 @@ Plug 'junegunn/fzf.vim',
 
 " https://github.com/Mofiqul/dracula.nvim
 Plug 'Mofiqul/dracula.nvim'
+
+" https://github.com/echasnovski/mini.animate
+Plug 'echasnovski/mini.animate', { 'branch': 'stable' }
 
 call plug#end()
 
@@ -35,3 +40,6 @@ nnoremap <leader>pf :Files<CR>
 " navigate over results of a quicklist, e.g. `:grep <term> **/*.ts`
 nnoremap <C-j> :cnext<CR>
 nnoremap <C-k> :cprevious<CR>
+
+" https://github.com/echasnovski/mini.animate
+lua require('mini.animate').setup()
