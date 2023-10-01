@@ -109,7 +109,21 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>3", function() ui.nav_file(3) end)
 			vim.keymap.set("n", "<leader>4", function() ui.nav_file(4) end)
 		end
-	}
+	},
+	{
+		-- https://github.com/mbbill/undotree
+		"mbbill/undotree",
+		config = function()
+			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+		end,
+	},
+	{
+		-- https://github.com/tpope/vim-fugitive
+		"tpope/vim-fugitive",
+		config = function()
+			vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+		end,
+	},
 })
 
 -- open file explorer (`pv` = project view)
