@@ -1,5 +1,6 @@
 -- External requirements:
 --  * for telescope.nvim: ripgrep - https://github.com/BurntSushi/ripgrep#installation
+--  * for telescope-fzf-native: cmake - `brew install cmake`
 --
 
 -- TODO: signs whether a line was modified vs git
@@ -50,7 +51,10 @@ require("lazy").setup({
             vim.cmd('colorscheme rose-pine')
         end
     },
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    -- https://github.com/nvim-telescope/telescope-fzf-native.nvim#installation
+    { 'nvim-telescope/telescope-fzf-native.nvim',
+        build =
+        'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
     {
         -- https://github.com/nvim-telescope/telescope.nvim
         'nvim-telescope/telescope.nvim',
