@@ -1,3 +1,7 @@
+-- External requirements:
+--  * for telescope.nvim: ripgrep - https://github.com/BurntSushi/ripgrep#installation
+--
+
 -- TODO: signs whether a line was modified vs git
 -- TODO: format with Prettier?
 -- TODO: find some command to jump to next git-modified line in the file
@@ -46,11 +50,12 @@ require("lazy").setup({
             vim.cmd('colorscheme rose-pine')
         end
     },
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {
         -- https://github.com/nvim-telescope/telescope.nvim
         'nvim-telescope/telescope.nvim',
         tag = '0.1.3',
-        dependencies = { 'nvim-lua/plenary.nvim' },
+        dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzf-native.nvim' },
         config = function()
             local builtin = require('telescope.builtin')
             vim.keymap.set('n', '<C-p>', builtin.find_files, {})
@@ -60,6 +65,9 @@ require("lazy").setup({
             --vim.keymap.set('n', '<leader>gs', builtin.grep_string, {})
             --vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
             --vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+            -- https://github.com/nvim-telescope/telescope-fzf-native.nvim#telescope-setup-and-configuration
+            require('telescope').load_extension('fzf')
         end
     },
     {
