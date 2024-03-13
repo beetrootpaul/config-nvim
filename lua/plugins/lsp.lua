@@ -16,7 +16,6 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"tsserver",
-					"stylua",
 				},
 			})
 		end,
@@ -28,8 +27,14 @@ return {
 		config = function()
 			local lspconfig = require("lspconfig")
 
-			lspconfig.lua_ls.setup({})
-			lspconfig.tsserver.setup({})
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+			lspconfig.lua_ls.setup({
+				capatilities = capabilities,
+			})
+			lspconfig.tsserver.setup({
+				capatilities = capabilities,
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
