@@ -22,8 +22,6 @@ require("lazy").setup({
 
   --require("kickstart/plugins/gitsigns"),
 
-  --require("kickstart/plugins/which-key"),
-
   --require("kickstart/plugins/lspconfig"),
 
   --require("kickstart/plugins/conform"),
@@ -40,6 +38,8 @@ require("lazy").setup({
 
   -- TODO: check if it really works
   require("plugins/vim-sleuth"),
+  
+  require("plugins/which-key"),
 
   --require("kickstart/plugins/mini"),
 
