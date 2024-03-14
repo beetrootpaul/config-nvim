@@ -15,6 +15,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
+					"taplo",
 					"tsserver",
 				},
 			})
@@ -30,6 +31,10 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			lspconfig.lua_ls.setup({
+				capatilities = capabilities,
+			})
+      -- https://github.com/tamasfe/taplo
+			lspconfig.taplo.setup({
 				capatilities = capabilities,
 			})
 			lspconfig.tsserver.setup({
