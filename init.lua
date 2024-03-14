@@ -1,4 +1,6 @@
--- based on: https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
+-- based on:
+--  - https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
+--  - https://github.com/dam9000/kickstart-modular.nvim
 
 require("vim-config")
 
