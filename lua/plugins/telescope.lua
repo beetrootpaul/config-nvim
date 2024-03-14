@@ -79,6 +79,14 @@ return {
       pcall(require('telescope').load_extension, 'fzf')
       pcall(require('telescope').load_extension, 'ui-select')
 
+      -- TODO: check which of them do you really need
+
+      -- Let's disable "s", because:
+      --  - it's not a very popular key in vim,
+      --  - if e.g. I want to open telescope with `<leader>sf`, but am not fast enough,
+      --    `f` will be typed instead in the current buffer.
+      vim.keymap.set('n', 's', '<Nop>')
+      
       -- See `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
