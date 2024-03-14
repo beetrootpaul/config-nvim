@@ -1,5 +1,7 @@
 return {
   {
+    -- TODO: check other mini sub-plugins
+
     -- https://github.com/echasnovski/mini.nvim
     --
     -- Collection of various small independent plugins/modules
