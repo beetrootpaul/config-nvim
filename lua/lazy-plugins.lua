@@ -28,6 +28,8 @@ require("lazy").setup({
 
   --require("kickstart/plugins/cmp"),
 
+  require("plugins/mini"),
+
   require("plugins/telescope"),
 
   require("plugins/theme"),
@@ -40,10 +42,6 @@ require("lazy").setup({
   require("plugins/vim-sleuth"),
   
   require("plugins/which-key"),
-
-  --require("kickstart/plugins/mini"),
-
-  -- require 'kickstart.plugins.indent_line',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
