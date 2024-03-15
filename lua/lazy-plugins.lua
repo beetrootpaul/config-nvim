@@ -32,6 +32,8 @@ require("lazy").setup({
 
   require("plugins/mini"),
 
+  require("plugins/sunglasses"),
+
   require("plugins/telescope"),
 
   require("plugins/theme"),
