@@ -1,7 +1,10 @@
 return {
-  { -- Autocompletion
+  {
+    -- Autocompletion
     "hrsh7th/nvim-cmp",
+
     event = "InsertEnter",
+
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
       {
@@ -30,6 +33,7 @@ return {
       --    set up the ones that are useful for you.
       -- 'rafamadriz/friendly-snippets',
     },
+
     config = function()
       -- See `:help cmp`
       local cmp = require("cmp")
