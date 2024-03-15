@@ -1,6 +1,7 @@
 -- based on:
 --  - https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
 --  - https://github.com/dam9000/kickstart-modular.nvim
+--  - https://github.com/nvim-lua/kickstart.nvim
 
 -- NOTE: PREREQUISITES:
 -- https://github.com/dam9000/kickstart-modular.nvim/blob/master/README.md#install-external-dependencies
