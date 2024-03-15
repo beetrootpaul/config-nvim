@@ -1,27 +1,26 @@
-
 return {
   {
--- https://github.com/nvim-treesitter/nvim-treesitter
---
-	  -- Highlight, edit, and navigate code
--- https://github.com/nvim-treesitter/nvim-treesitter
-    'nvim-treesitter/nvim-treesitter',
+    -- https://github.com/nvim-treesitter/nvim-treesitter
+    --
+    -- Highlight, edit, and navigate code
+    -- https://github.com/nvim-treesitter/nvim-treesitter
+    "nvim-treesitter/nvim-treesitter",
 
-    build = ':TSUpdate',
+    build = ":TSUpdate",
 
     opts = {
       ensure_installed = {
-	      'bash',
-	      'css',
-	      'html',
-	      'javascript',
-	      'json',
-	      'lua',
-	      'markdown',
-	      'toml',
-	      'typescript',
-	      'vim',
-	      'vimdoc',
+        "bash",
+        "css",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "toml",
+        "typescript",
+        "vim",
+        "vimdoc",
       },
       -- Autoinstall languages that are not installed
       --auto_install = true,
@@ -33,7 +32,7 @@ return {
       -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 
       ---@diagnostic disable-next-line: missing-fields
-      require('nvim-treesitter.configs').setup(opts)
+      require("nvim-treesitter.configs").setup(opts)
 
       -- TODO: check these:
       --
@@ -46,4 +45,3 @@ return {
     end,
   },
 }
-

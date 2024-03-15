@@ -14,7 +14,6 @@ require("lazy").setup({
   -- https://github.com/folke/lazy.nvim?tab=readme-ov-file#-plugin-spec
   --
 
-
   -- TODO: the `gc` acts strange… how to fix it?
   require("plugins/comment"),
 
@@ -24,7 +23,7 @@ require("lazy").setup({
 
   require("plugins/gitsigns"),
 
- -- TODO: congire shortcuts to navigate across hunks and preview them
+  -- TODO: congire shortcuts to navigate across hunks and preview them
   require("plugins/indent-blankline"),
 
   --require("kickstart/plugins/conform"),
@@ -45,7 +44,7 @@ require("lazy").setup({
 
   -- TODO: check if it really works
   require("plugins/vim-sleuth"),
-  
+
   require("plugins/which-key"),
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

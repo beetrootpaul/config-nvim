@@ -4,10 +4,8 @@
 
 -- TODO: format all files
 
-
 -- NOTE: PREREQUISITES:
 -- https://github.com/dam9000/kickstart-modular.nvim/blob/master/README.md#install-external-dependencies
-
 
 -- Set <space> as the leader key
 -- See `:help mapleader`

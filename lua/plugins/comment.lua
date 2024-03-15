@@ -1,4 +1,3 @@
-
 return {
   -- https://github.com/numToStr/Comment.nvim
   --
@@ -10,5 +9,3 @@ return {
     opts = {},
   },
 }
-
-

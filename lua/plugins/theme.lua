@@ -6,15 +6,14 @@ return {
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
     --
-    
 
     -- https://github.com/rebelot/kanagawa.nvim
-  --"rebelot/kanagawa.nvim",
+    --"rebelot/kanagawa.nvim",
 
--- https://github.com/rose-pine/neovim
-  "rose-pine/neovim",
+    -- https://github.com/rose-pine/neovim
+    "rose-pine/neovim",
 
-  -- https://github.com/folke/tokyonight.nvim
+    -- https://github.com/folke/tokyonight.nvim
     --"folke/tokyonight.nvim",
 
     priority = 1000, -- make sure to load this before all the other start plugins
@@ -22,12 +21,11 @@ return {
     init = function()
       -- Load the colorscheme here.
       -- vim.cmd.colorscheme 'kanagawa'
-       vim.cmd.colorscheme 'rose-pine-moon'
+      vim.cmd.colorscheme("rose-pine-moon")
       -- vim.cmd.colorscheme 'tokyonight-night'
-      
+
       -- You can configure highlights by doing something like
-  -- vim.cmd.hi 'Comment gui=none'
+      -- vim.cmd.hi 'Comment gui=none'
     end,
   },
 }
-

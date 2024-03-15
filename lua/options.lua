@@ -15,7 +15,7 @@ vim.opt.mouse = "a"
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
 
--- TODO: find a better solution for a system clipboard, since this one break sequences like `c$` then paste 
+-- TODO: find a better solution for a system clipboard, since this one break sequences like `c$` then paste
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
