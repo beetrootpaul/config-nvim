@@ -1,2 +1,3 @@
 # This file is a specific list of ignores for ripgrep tool, used by telescope in Neovim 
+/.git/
 /lazy-lock.json

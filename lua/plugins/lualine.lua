@@ -1,5 +1,3 @@
--- TODO: what with this file?
-
 -- https://github.com/nvim-lualine/lualine.nvim
 return {
   "nvim-lualine/lualine.nvim",

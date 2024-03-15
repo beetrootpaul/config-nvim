@@ -82,8 +82,6 @@ return {
       pcall(require("telescope").load_extension, "fzf")
       pcall(require("telescope").load_extension, "ui-select")
 
-      -- TODO: check which of them do you really need
-
       -- Let's disable "s", because:
       --  - it's not a very popular key in vim,
       --  - if e.g. I want to open telescope with `<leader>sf`, but am not fast enough,

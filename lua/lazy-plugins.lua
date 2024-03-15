@@ -16,7 +16,6 @@ require("lazy").setup({
 
   require("plugins/alpha"),
 
-  -- TODO: the `gc` acts strange… how to fix it?
   require("plugins/comment"),
 
   require("plugins/completions"),
@@ -25,10 +24,11 @@ require("lazy").setup({
 
   require("plugins/gitsigns"),
 
-  -- TODO: congire shortcuts to navigate across hunks and preview them
   require("plugins/indent-blankline"),
 
   require("plugins/lsp"),
+
+  require("plugins/lualine"),
 
   require("plugins/mini"),
 
@@ -40,7 +40,6 @@ require("lazy").setup({
 
   require("plugins/treesitter"),
 
-  -- TODO: check if it really works
   require("plugins/vim-sleuth"),
 
   require("plugins/which-key"),

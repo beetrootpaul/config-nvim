@@ -2,8 +2,6 @@
 --  - https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
 --  - https://github.com/dam9000/kickstart-modular.nvim
 
--- TODO: format all files
-
 -- NOTE: PREREQUISITES:
 -- https://github.com/dam9000/kickstart-modular.nvim/blob/master/README.md#install-external-dependencies
 
