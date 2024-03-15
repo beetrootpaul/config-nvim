@@ -14,6 +14,8 @@ require("lazy").setup({
   -- https://github.com/folke/lazy.nvim?tab=readme-ov-file#-plugin-spec
   --
 
+  require("plugins/alpha"),
+
   -- TODO: the `gc` acts strange… how to fix it?
   require("plugins/comment"),
 
@@ -25,10 +27,6 @@ require("lazy").setup({
 
   -- TODO: congire shortcuts to navigate across hunks and preview them
   require("plugins/indent-blankline"),
-
-  --require("kickstart/plugins/conform"),
-
-  --require("kickstart/plugins/cmp"),
 
   require("plugins/lsp"),
 

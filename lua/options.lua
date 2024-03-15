@@ -9,8 +9,9 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- TODO: does this even work?
 -- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = "a"
+-- vim.opt.mouse = "a"
 
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
@@ -38,6 +39,9 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 250
 
 -- NOTE: decreasing this value makes it easier to accidentally type some text instead of e.g. bringing in telescope with `<leader>sf`
+--
+-- Decrease mapped sequence wait time
+-- Displays which-key popup sooner
 --vim.opt.timeoutlen = 300
 
 -- Configure how new splits should be opened

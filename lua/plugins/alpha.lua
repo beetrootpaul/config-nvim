@@ -1,33 +1,11 @@
--- TODO: what with this file?
-
 return {
+  -- https://github.com/goolord/alpha-nvim
+  --
   "goolord/alpha-nvim",
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
-  },
+
+  dependencies = { "nvim-tree/nvim-web-devicons" },
 
   config = function()
-    local alpha = require("alpha")
-    local dashboard = require("alpha.themes.startify")
-
-    dashboard.section.header.val = {
-      [[                                                                       ]],
-      [[                                                                       ]],
-      [[                                                                       ]],
-      [[                                                                       ]],
-      [[                                                                     ]],
-      [[       ████ ██████           █████      ██                     ]],
-      [[      ███████████             █████                             ]],
-      [[      █████████ ███████████████████ ███   ███████████   ]],
-      [[     █████████  ███    █████████████ █████ ██████████████   ]],
-      [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
-      [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
-      [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
-      [[                                                                       ]],
-      [[                                                                       ]],
-      [[                                                                       ]],
-    }
-
-    alpha.setup(dashboard.opts)
+    require("alpha").setup(require("alpha.themes.startify").config)
   end,
 }

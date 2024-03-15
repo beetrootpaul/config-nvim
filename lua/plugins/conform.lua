@@ -18,7 +18,7 @@ return {
           require("conform").format({ async = true, lsp_fallback = true })
         end,
         mode = "",
-        desc = "Format buffer",
+        desc = "[F]ormat buffer",
       },
     },
 
