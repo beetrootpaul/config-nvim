@@ -18,16 +18,20 @@ require("lazy").setup({
   -- TODO: the `gc` acts strange… how to fix it?
   require("plugins/comment"),
 
+  require("plugins/completions"),
+
+  require("plugins/conform"),
+
   require("plugins/gitsigns"),
 
  -- TODO: congire shortcuts to navigate across hunks and preview them
   require("plugins/indent-blankline"),
 
-  --require("kickstart/plugins/lspconfig"),
-
   --require("kickstart/plugins/conform"),
 
   --require("kickstart/plugins/cmp"),
+
+  require("plugins/lsp"),
 
   require("plugins/mini"),
 
