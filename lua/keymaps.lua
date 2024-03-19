@@ -55,3 +55,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- Pasting, which does not make the content disappear from a register after pasting on a visually selected text (?)
 -- See: https://youtu.be/qZO9A5F6BZs?si=9pnqzHdfQ6mJfSHQ&t=403
 vim.keymap.set("x", "<leader>p", "\"_dP")
+
+-- An alternative way to open built-in file explorer (Netrw)
+-- "vf" stands for "view files"
+vim.keymap.set("n", "<leader>vf", ":Ex<CR>")
