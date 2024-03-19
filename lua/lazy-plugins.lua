@@ -44,6 +44,8 @@ require("lazy").setup({
 
   require("plugins/vim-sleuth"),
 
+  require("plugins/vim-visual-multi"),
+
   require("plugins/which-key"),
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

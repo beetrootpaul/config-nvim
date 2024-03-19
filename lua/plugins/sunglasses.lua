@@ -11,6 +11,6 @@ return {
     -- filter_type = "NOSYNTAX",
 
     -- filter_percent = 0.65,
-    filter_percent = 0.4,
+    filter_percent = 0.3,
   },
 }
