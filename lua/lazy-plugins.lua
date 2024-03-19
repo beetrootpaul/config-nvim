@@ -42,6 +42,8 @@ require("lazy").setup({
 
   require("plugins/treesitter"),
 
+  require("plugins/undotree"),
+
   require("plugins/vim-sleuth"),
 
   require("plugins/vim-visual-multi"),
