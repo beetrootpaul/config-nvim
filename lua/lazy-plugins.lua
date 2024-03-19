@@ -44,6 +44,8 @@ require("lazy").setup({
 
   require("plugins/undotree"),
 
+  require("plugins/vim-fugitive"),
+
   require("plugins/vim-sleuth"),
 
   require("plugins/vim-visual-multi"),
