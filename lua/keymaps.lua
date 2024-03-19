@@ -51,3 +51,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- center the focused line after jumping half screen up/down
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+
+-- Pasting, which does not make the content disappear from a register after pasting on a visually selected text (?)
+-- See: https://youtu.be/qZO9A5F6BZs?si=9pnqzHdfQ6mJfSHQ&t=403
+vim.keymap.set("x", "<leader>p", "\"_dP")
