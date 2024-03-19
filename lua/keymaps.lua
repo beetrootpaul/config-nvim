@@ -56,6 +56,15 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- See: https://youtu.be/qZO9A5F6BZs?si=9pnqzHdfQ6mJfSHQ&t=403
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+-- Yanking (copying), which puts text into a system clipboard as well
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
+
 -- An alternative way to open built-in file explorer (Netrw)
 -- "vf" stands for "view files"
 vim.keymap.set("n", "<leader>vf", ":Ex<CR>")
+
+-- Move selected text up/down
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
